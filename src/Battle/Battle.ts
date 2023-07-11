@@ -1,7 +1,8 @@
+import { SimpleFighter } from '../Fighter';
 import Fighter from '../Fighter/Fighter';
 
 abstract class Battle {
-  constructor(protected player: Fighter) { }
+  constructor(protected player: Fighter | SimpleFighter) { }
 
   // Should return 1 if player wins, -1 otherwise
   fight(): number {
